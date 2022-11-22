@@ -1,4 +1,4 @@
-const Validator = require('../src/validator')
+const Validator = require('../src/Validator')
 const fs = require('fs').promises
 
 describe('valid sudoku', () => {

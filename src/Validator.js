@@ -7,6 +7,7 @@ class Validator {
 
   validate(sudoku) {
     // Your code here
+    console.log(sudoku);
   }
 }
 
