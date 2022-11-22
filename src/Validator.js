@@ -1,14 +1,22 @@
+const Board = require("./Board.js");
 class Validator {
   static validate(sudoku) {
-    const validator = new Validator
+    const validator = new Validator();
 
-    return validator.validate(sudoku)
+    return validator.validate(sudoku);
   }
 
-  validate(sudoku) {
-    // Your code here
-    console.log(sudoku);
+  /**
+   * @param {string} sudokuRawString
+   */
+  validate(sudokuRawString) {
+    /**
+     * @param {Board} gameState
+     */
+    const gameState = new Board(sudokuRawString);
+
+    return gameState.validate();
   }
 }
 
-module.exports = Validator
+module.exports = Validator;
